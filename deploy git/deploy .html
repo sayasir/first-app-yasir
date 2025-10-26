@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first deploy</title>
+       <style>
+        .screen {
+            margin: 50px;
+        }
+        .input {
+            padding: 5px;
+            font-size: 16px;
+        }
+        .ptag {
+            margin-top: 10px;
+            font-size: 18px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen">
+           <input type="text" placeholder="type some" class="input">
+    <p class="ptag">
+
+    </p>
+    </div>
+ 
+    <script>
+        const screen=document.querySelector('.screen input');
+        const ptag=document.querySelector('.ptag');
+            screen.addEventListener('input',()=>{
+            ptag.innerHTML=screen.value
+           })
+    </script>
+</body>
+</html>
